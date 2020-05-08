@@ -1,0 +1,161 @@
+/*Form geral*/
+body{
+	font-family: Slabo;
+
+}
+
+h1, h2, h3{
+
+	margin: 0;
+	font-family: "Comic+Sans";
+	font-weight: 700;
+}
+
+p{
+	font-family: Slabo, Handlee;
+}
+
+.container{
+	width: 100%;
+}
+
+/*barra de navegação*/
+.logo img{
+	border-radius: 50%;
+}
+
+nav{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: 30px;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li{
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em; 
+	padding: 2%;
+}
+
+nav ul li a{
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/*Header*/
+header{
+	background-image: url('../img/background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+}
+
+header p{
+	margin-bottom: 2em;
+	font-size: 1.7em;
+}
+
+.botao{
+	color: #1E791E;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #000000;
+	font-size: .8em;
+	border-radius:10%;
+}
+
+
+
+/*sobre mim*/
+#Sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #1E791E;
+	color: #FFFFFF;
+}
+
+#Sobre h2{
+	margin-top: 20px;
+	font-size: 2em;
+}
+
+.pic{
+	float: left;
+	width: 50%;
+}
+
+.pic img{
+	width: 60%;
+}
+
+.texto{
+	float: right;
+	width: 50%;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+/*cabeçalho ou barra de navegação*/	
+nav{
+	flex direction: row;
+	justify-content: space-around;
+}
+
+nav ul{
+	flex-direction: row;
+	width: 70%;                     
+}
+
+/*header*/
+header{
+
+height: 600px;
+height: 60vh;
+justify-content: center;
+}
+
+/*sobre*/
+#sobre{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 90vh;
+	justify-content: center;
+	min-height: 80vh;
+}
+#sobre h2{
+	text-align: center;
+	width: 100%;
+	padding: 0 10px;
+}
+#sobre div{
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 0 10px;
+}
+}
